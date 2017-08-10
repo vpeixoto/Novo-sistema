@@ -1,0 +1,76 @@
+2017-08-10 20:36:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /users/login?redirect=%2Fpages%2Findex%2Fhome
+Referer URL: http://localhost/sistema/users
+Stack Trace:
+#0 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\xampp\htdocs\sistema\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\xampp\htdocs\sistema\webroot\index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-08-10 20:40:51 Error: [Cake\Core\Exception\MissingPluginException] Plugin TwitterBootstrap could not be found. in C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Core\Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'TwitterBootstrap',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\sistema\config\bootstrap.php(215): Cake\Core\Plugin::load('TwitterBootstra...')
+#1 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\BaseApplication.php(61): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Server.php(70): Cake\Http\BaseApplication->bootstrap()
+#3 C:\xampp\htdocs\sistema\webroot\index.php(37): Cake\Http\Server->run()
+#4 {main}
+
+
+2017-08-10 20:43:43 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 174
+Request URL: /
+Stack Trace:
+#0 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(76): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#4 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Connection.php(311): Cake\Database\Statement\SqliteStatement->execute()
+#5 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Query.php(213): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#6 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1916): Cake\Database\Query->execute()
+#7 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1810): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Panel), Array)
+#8 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1723): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Panel), Object(ArrayObject))
+#9 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#10 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Connection.php(678): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#11 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#12 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#13 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Association\HasMany.php(209): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Panel), Array)
+#14 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\Association\HasMany->saveAssociated(Object(DebugKit\Model\Entity\Request), Array)
+#15 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(234): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\HasMany), Object(DebugKit\Model\Entity\Request), Array, Array)
+#16 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(199): Cake\ORM\AssociationCollection->_saveAssociations(Object(DebugKit\Model\Table\RequestsTable), Object(DebugKit\Model\Entity\Request), Array, Array, true)
+#17 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1844): Cake\ORM\AssociationCollection->saveChildren(Object(DebugKit\Model\Table\RequestsTable), Object(DebugKit\Model\Entity\Request), Array, Array)
+#18 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1816): Cake\ORM\Table->_onSaveSuccess(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#19 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1723): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#20 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1446): Cake\ORM\Table->Cake\ORM\{closure}()
+#21 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Database\Connection.php(678): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#22 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1447): Cake\Database\Connection->transactional(Object(Closure))
+#23 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\ORM\Table.php(1724): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#24 C:\xampp\htdocs\sistema\vendor\cakephp\debug_kit\src\ToolbarService.php(204): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#25 C:\xampp\htdocs\sistema\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\xampp\htdocs\sistema\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\xampp\htdocs\sistema\webroot\index.php(37): Cake\Http\Server->run()
+#30 {main}
+
+
