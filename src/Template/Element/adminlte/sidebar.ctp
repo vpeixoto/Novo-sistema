@@ -7,15 +7,17 @@
     <div class="pull-left image">
       <?php
             echo $this->Html->image(
-                'TwitterBootstrap.user2-160x160.jpg',
+                'user_icon.png',
                 ['class'=>'img-circle',  "alt"=>"User Image"]
             );
         ?>
     </div>
     <div class="pull-left info">
-      <p>Alexander Pierce</p>
-      <!-- Status -->
-      <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+      <p>
+		<?php
+            echo $user_name;
+		?> 
+	  </p>
     </div>
   </div>
 
@@ -27,17 +29,87 @@
     <li><i class="fa fa-link"></i><?= $this->Html->link(__('List Setors'), ['controller' => 'Setors', 'action' => 'index']) ?></li>
     <li><i class="fa fa-link"></i><?= $this->Html->link(__('New Setor'), ['controller' => 'Setors', 'action' => 'add']) ?></li>
 	
-	
-	
-	<li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-    <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-    <li class="treeview">
-      <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-      <ul class="treeview-menu">
-        <li><a href="#">Link in level 2</a></li>
-        <li><a href="#">Link in level 2</a></li>
-      </ul>
+	<li><a href="#"><i class="fa fa-link"></i> <span>Relatórios</span></a></li>
+    
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Recebimento</span> <i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
     </li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Qualidade</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Planejamento</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Expedição</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Estoque</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Oficina</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Financeiro</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Suporte Cliente</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Cotação</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
+	
+	<li class="treeview">
+		<a href="#"><i class="fa fa-link"></i> <span>Cadastro</span><i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><a href="#">Link in level 2</a></li>
+			<li><a href="#">Link in level 2</a></li>
+		</ul>
+	</li>
   </ul>
   <!-- /.sidebar-menu -->
 </section>
